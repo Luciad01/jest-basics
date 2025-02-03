@@ -55,11 +55,11 @@ jest --watchAll
 jest --coverage
 ```
 
-### Mock de un servicio
+## Mock de un servicio
 
 Para no tener que crear un espía cada vez que tengamos que mockear porque tenemos un componente que llama a muchos métodos de un mismo servicio.
 
-### Etiquetas y otros útiles
+## Etiquetas y otros útiles
 - xit / xdescribe: que no se haga el test / conjunto de test (skipped).
 - fit | it.only / fdescribe (no muy útil): solo se hará ese test (el resto -> skipped). Probar test más rápido si cargar el resto.
 
@@ -70,9 +70,10 @@ Para no tener que crear un espía cada vez que tengamos que mockear porque tenem
 - beforeEach(): antes de cada test. 
 - afterEach():  después de cada test.
 
-### Tests en dialogs
+## Tests en dialogs
 
-* [CART] dialog tiene un método 'open()' y devuelve dialogRef, que tiene un método 'afterClosed()' que devuelve un observable, que al subscribirnos, devuelve un booleano, que si es "true" ejecuta '_clearListCartBook()'. Se deberá crear un monk con esto.
+### [CART (modificación)] 
+dialog tiene un método 'open()' y devuelve dialogRef, que tiene un método 'afterClosed()' que devuelve un observable, que al subscribirnos, devuelve un booleano, que si es "true" ejecuta '_clearListCartBook()'. Se deberá crear un monk con esto.
 - Constantes iniciales:
 ```ts
 const MatDialoMock = {
@@ -92,7 +93,7 @@ const MatDialoMock = {
 ```
 
 
-* [confirmation-dialog.component.spec.ts]
+### [confirmation-dialog.component.spec.ts]
 ```ts
 const MatDialogMock = {
   close() => null
