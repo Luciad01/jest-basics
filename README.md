@@ -1,4 +1,3 @@
-Project for the unit test course
 
 #### 3 tipos generales de tests
 ^ +líneas de código se prueban.
