@@ -54,6 +54,10 @@ jest --watchAll
 ```bash
 jest --coverage
 ```
+- Para no generar build si falla algún test:
+```bash
+jest && ng build
+```
 
 ## Mock de un servicio
 
